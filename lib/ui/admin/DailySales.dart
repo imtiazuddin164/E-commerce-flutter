@@ -105,7 +105,7 @@ class _DailySalesPageState extends State<DailySalesPage> {
 
             const SizedBox(height: 20),
 
-            // 📋 Table
+            // Table
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: DataTable(
@@ -453,7 +453,7 @@ class _SalesReportPageState extends State<SalesReportPage> {
               padding: const EdgeInsets.all(16),
               child: Column(
                 children: [
-                  // ✅ Summary cards - responsive
+                  // Summary cards - responsive
                   screenWidth < 600
                       ? Column(
                           children: [
@@ -513,7 +513,7 @@ class _SalesReportPageState extends State<SalesReportPage> {
                   ),
                   const SizedBox(height: 20),
 
-                  // 📅 Daily details with search
+                  // Daily details with search
                   _sectionCard(
                     title: '📅 Daily Products Sales (Details)',
                     headerAction: _responsiveSearchBox(
@@ -525,7 +525,7 @@ class _SalesReportPageState extends State<SalesReportPage> {
                   ),
                   const SizedBox(height: 20),
 
-                  // 🗓️ Monthly details with search
+                  // Monthly details with search
                   _sectionCard(
                     title: '🗓️ Monthly Products Sales (Details)',
                     headerAction: _responsiveSearchBox(
@@ -537,7 +537,7 @@ class _SalesReportPageState extends State<SalesReportPage> {
                   ),
                   const SizedBox(height: 20),
 
-                  // 📆 Yearly details with search
+                  // Yearly details with search
                   _sectionCard(
                     title: '📆 Yearly Products Sales (Details)',
                     headerAction: _responsiveSearchBox(
@@ -606,12 +606,12 @@ class _SalesReportPageState extends State<SalesReportPage> {
       border: Border.all(color: Colors.grey.shade300),
     ),
     child: Column(
-      crossAxisAlignment: CrossAxisAlignment.center, // ✅ Center align
+      crossAxisAlignment: CrossAxisAlignment.center, // Center align
       children: [
         Text(
           title,
           style: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
-          textAlign: TextAlign.center, // ✅ Text center
+          textAlign: TextAlign.center, // Text center
         ),
         const SizedBox(height: 8),
         Text(
@@ -621,7 +621,7 @@ class _SalesReportPageState extends State<SalesReportPage> {
             fontWeight: FontWeight.bold,
             color: bgColor,
           ),
-          textAlign: TextAlign.center, // ✅ Amount center
+          textAlign: TextAlign.center, // Amount center
         ),
       ],
     ),
