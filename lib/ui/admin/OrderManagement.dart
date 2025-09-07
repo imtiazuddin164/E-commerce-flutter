@@ -12,10 +12,9 @@
 }
 
 class _OrderManagementPageState extends State<OrderManagementPage> {
-  // 👉 তোমার API base অনুযায়ী বদলে নাও
   final String baseUrl = 'http://localhost:8080';
   // common patterns: '/pharma/order' or '/pharma/orders'
-  final String ordersUrlPath = '/orders'; // <-- এখানে path ঠিক করো
+  final String ordersUrlPath = '/orders'; 
 
   bool _loading = false;
   String? _error;
@@ -505,7 +504,7 @@ class _OrderManagementPageState extends State<OrderManagementPage> {
       : SingleChildScrollView(
           scrollDirection: Axis.horizontal,
           child: SingleChildScrollView(
-            scrollDirection: Axis.vertical, // ← vertical scroll যোগ হলো
+            scrollDirection: Axis.vertical, 
             child: DataTable(
               headingRowColor:
                   MaterialStateProperty.all(Colors.blue.shade100),
