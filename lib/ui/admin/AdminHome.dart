@@ -38,7 +38,7 @@
 //       body: SafeArea(
 //         child: Column(
 //           children: [
-//             // ✅ Top Navbar
+//             // Top Navbar
 //             Container(
 //               color: Colors.blue,
 //               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -70,7 +70,7 @@
 //               ),
 //             ),
 
-//             // ✅ Body section - fully scrollable
+//             // Body section - fully scrollable
 //             Expanded(
 //               child: SingleChildScrollView(
 //                 child: Padding(
@@ -139,7 +139,7 @@
 //                           ),
 //                         ),
 
-//                       // ✅ Main content
+//                       // Main content
 //                       Padding(
 //                         padding: const EdgeInsets.all(20.0),
 //                         child: Text(
@@ -202,7 +202,7 @@
 //       body: SafeArea(
 //         child: Column(
 //           children: [
-//             // ✅ Top Navbar
+//             // Top Navbar
 //             Container(
 //               color: Colors.blue,
 //               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
@@ -237,7 +237,7 @@
 //               ),
 //             ),
 
-//             // ✅ Body section - fully scrollable
+//             // Body section - fully scrollable
 //             Expanded(
 //               child: SingleChildScrollView(
 //                 child: Padding(
@@ -340,7 +340,7 @@
 //                           ),
 //                         ),
 
-//                       // ✅ Main content
+//                       // Main content
 
 //                       Padding(
 //                         padding: const EdgeInsets.all(20.0),
@@ -376,7 +376,7 @@
 // }
 
 // class _AdminHomePageState extends State<AdminHomePage> {
-//   bool isSidebarVisible = true; // true করলে সাইডবার ডিফল্ট দেখা যাবে
+//   bool isSidebarVisible = true; // true
 //   String selectedMenu = 'Dashboard';
 
 //   final menuItems = {
@@ -416,7 +416,7 @@
 //   void _onMenuSelected(String menu) {
 //     setState(() {
 //       selectedMenu = menu;
-//       isSidebarVisible = false; // সাইডবার ক্লোজ করতে চাইলে true রাখো
+//       isSidebarVisible = false;
 //     });
 //   }
 
@@ -882,7 +882,7 @@ class _AdminHomePageState extends State<AdminHomePage> {
       // case 'Product List':
       //   return ProductListPage(); // jodi thake
       case 'Daily Sales':
-        return const SalesReportPage(); // ✅ Daily Sales page
+        return const SalesReportPage(); // Daily Sales page
       // case 'Monthly Sales':
       //   return const MonthlySalesPage(); // Optional
       // case 'Yearly Sales':
