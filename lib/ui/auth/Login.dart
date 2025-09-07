@@ -38,11 +38,7 @@ class _LoginPageState extends State<LoginPage> {
     setState(() => _loading = false);
 
     if (success) {
-      // ✅ ProfilePage-এ রেজাল্ট পাঠানো
       Navigator.pop(context, true);
-
-      // 🔹 যদি role-based নেভিগেশন করতে চাও তাহলে নিচের ব্লক আনকমেন্ট করো
-      
       String? role = await AuthService().getRole();
       if (role == 'admin') {
         Navigator.pushReplacement(
@@ -306,10 +302,7 @@ class _LoginPageState extends State<LoginPage> {
     setState(() => _loading = false);
 
     if (success) {
-      // 🔹 এখন লগইন সফল হলে Profile পেজে ফলাফল পাঠাচ্ছি
       Navigator.pop(context, true);
-
-      // যদি role-based নেভিগেশন দরকার হয় তাহলে নিচেরটা আনকমেন্ট করো
       /*
     String? role = await AuthService().getRole();
 
